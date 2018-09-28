@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		8C9AEAF0215E17B000C6B7BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AEAEF215E17B000C6B7BF /* AppDelegate.swift */; };
-		8C9AEAF2215E17B000C6B7BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AEAF1215E17B000C6B7BF /* ViewController.swift */; };
+		8C9AEAF2215E17B000C6B7BF /* ProPlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AEAF1215E17B000C6B7BF /* ProPlayersViewController.swift */; };
 		8C9AEAF5215E17B000C6B7BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C9AEAF3215E17B000C6B7BF /* Main.storyboard */; };
 		8C9AEAF7215E17B100C6B7BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C9AEAF6215E17B100C6B7BF /* Assets.xcassets */; };
 		8C9AEAFA215E17B100C6B7BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C9AEAF8215E17B100C6B7BF /* LaunchScreen.storyboard */; };
 		8C9AEB05215E17B200C6B7BF /* Dota_2_Pro_PlayersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AEB04215E17B200C6B7BF /* Dota_2_Pro_PlayersTests.swift */; };
 		8C9AEB10215E17B200C6B7BF /* Dota_2_Pro_PlayersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AEB0F215E17B200C6B7BF /* Dota_2_Pro_PlayersUITests.swift */; };
+		8C9AEB1E215E18C900C6B7BF /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AEB1D215E18C900C6B7BF /* PlayerTableViewCell.swift */; };
+		8C9AEB21215E192A00C6B7BF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AEB20215E192A00C6B7BF /* Player.swift */; };
+		8C9AEB26215E355E00C6B7BF /* ActivityIndicatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AEB25215E355E00C6B7BF /* ActivityIndicatorCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		8C9AEAEC215E17B000C6B7BF /* Dota 2 Pro Players.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dota 2 Pro Players.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C9AEAEF215E17B000C6B7BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C9AEAF1215E17B000C6B7BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C9AEAF1215E17B000C6B7BF /* ProPlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProPlayersViewController.swift; sourceTree = "<group>"; };
 		8C9AEAF4215E17B000C6B7BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C9AEAF6215E17B100C6B7BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C9AEAF9215E17B100C6B7BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		8C9AEB0B215E17B200C6B7BF /* Dota 2 Pro PlayersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dota 2 Pro PlayersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C9AEB0F215E17B200C6B7BF /* Dota_2_Pro_PlayersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dota_2_Pro_PlayersUITests.swift; sourceTree = "<group>"; };
 		8C9AEB11215E17B200C6B7BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C9AEB1D215E18C900C6B7BF /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
+		8C9AEB20215E192A00C6B7BF /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		8C9AEB25215E355E00C6B7BF /* ActivityIndicatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,11 @@
 		8C9AEAEE215E17B000C6B7BF /* Dota 2 Pro Players */ = {
 			isa = PBXGroup;
 			children = (
-				8C9AEAEF215E17B000C6B7BF /* AppDelegate.swift */,
-				8C9AEAF1215E17B000C6B7BF /* ViewController.swift */,
+				8C9AEB23215E196900C6B7BF /* Controllers */,
+				8C9AEB22215E193100C6B7BF /* Model */,
+				8C9AEB1F215E18CD00C6B7BF /* View */,
 				8C9AEAF3215E17B000C6B7BF /* Main.storyboard */,
-				8C9AEAF6215E17B100C6B7BF /* Assets.xcassets */,
-				8C9AEAF8215E17B100C6B7BF /* LaunchScreen.storyboard */,
-				8C9AEAFB215E17B100C6B7BF /* Info.plist */,
+				8C9AEB24215E198600C6B7BF /* Other */,
 			);
 			path = "Dota 2 Pro Players";
 			sourceTree = "<group>";
@@ -123,6 +128,42 @@
 				8C9AEB11215E17B200C6B7BF /* Info.plist */,
 			);
 			path = "Dota 2 Pro PlayersUITests";
+			sourceTree = "<group>";
+		};
+		8C9AEB1F215E18CD00C6B7BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8C9AEB1D215E18C900C6B7BF /* PlayerTableViewCell.swift */,
+				8C9AEB25215E355E00C6B7BF /* ActivityIndicatorCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8C9AEB22215E193100C6B7BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C9AEB20215E192A00C6B7BF /* Player.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8C9AEB23215E196900C6B7BF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8C9AEAF1215E17B000C6B7BF /* ProPlayersViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8C9AEB24215E198600C6B7BF /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				8C9AEAF6215E17B100C6B7BF /* Assets.xcassets */,
+				8C9AEAF8215E17B100C6B7BF /* LaunchScreen.storyboard */,
+				8C9AEAEF215E17B000C6B7BF /* AppDelegate.swift */,
+				8C9AEAFB215E17B100C6B7BF /* Info.plist */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +297,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C9AEAF2215E17B000C6B7BF /* ViewController.swift in Sources */,
+				8C9AEB21215E192A00C6B7BF /* Player.swift in Sources */,
+				8C9AEB1E215E18C900C6B7BF /* PlayerTableViewCell.swift in Sources */,
+				8C9AEAF2215E17B000C6B7BF /* ProPlayersViewController.swift in Sources */,
+				8C9AEB26215E355E00C6B7BF /* ActivityIndicatorCell.swift in Sources */,
 				8C9AEAF0215E17B000C6B7BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,7 +478,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U98YH747J6;
-				INFOPLIST_FILE = "Dota 2 Pro Players/Info.plist";
+				INFOPLIST_FILE = "Dota 2 Pro Players/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +496,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U98YH747J6;
-				INFOPLIST_FILE = "Dota 2 Pro Players/Info.plist";
+				INFOPLIST_FILE = "Dota 2 Pro Players/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
