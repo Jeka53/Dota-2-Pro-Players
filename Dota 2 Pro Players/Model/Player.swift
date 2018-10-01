@@ -6,12 +6,36 @@
 //  Copyright © 2018 Jora. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class Player {
-  var name: String
+class Player: NSObject, Decodable {
   
-  init(name: String) {
+  let roles: [Int: String] = [
+    0: "Safe Lane",
+    1: "Mid Lane",
+    2: "Offlane",
+    3: "Jungle"
+  ]
+  
+  var avatar: URL?
+  var name: String?
+  var countryCode: String?
+  var team: String?
+  var role: Int?
+  
+  enum CodingKeys: String, CodingKey {
+    case avatar = "avatarfull"
+    case name
+    case countryCode = "loccountrycode"
+    case team = "team_name"
+    case role = "fantasy_role"
+  }
+  
+  init(avatar: URL, name: String, countryCode: String, team: String, role: Int) {
+    self.avatar = avatar
     self.name = name
+    self.countryCode = countryCode
+    self.team = team
+    self.role = role
   }
 }
