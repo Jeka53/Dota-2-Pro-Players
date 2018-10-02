@@ -8,23 +8,16 @@
 
 import UIKit
 
-// Pagination properties
-var offset = 0
-var limit = 20
-let step = 20
-
-class ProPlayersViewController: UITableViewController {
-  
-//  var isLoading = false
+class ProPlayersTableViewController: UITableViewController {
   
   let cellIdentifier = "PlayerCell"
   let loadingIdentifier = "ActivityCell"
+  let segueIdentifier = "toParticipants"
   
   private var token: NSKeyValueObservation?
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
     
     refreshControl = UIRefreshControl()
     refreshControl?.addTarget(self, action: #selector(fetchProPlayers), for: .valueChanged)
@@ -37,10 +30,6 @@ class ProPlayersViewController: UITableViewController {
     }
     
     ProPlayersService.service.fetchProPlayers()
-    
-//    if !isLoading {
-//      players = (offset..<limit).map{ Player(name: String($0)) }
-//    }
   }
   
   @objc func fetchProPlayers() {
@@ -49,7 +38,7 @@ class ProPlayersViewController: UITableViewController {
 }
 
 // MARK: - UITableDataSource
-extension ProPlayersViewController {
+extension ProPlayersTableViewController {
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return ProPlayersService.service.players.count
   }
@@ -58,6 +47,24 @@ extension ProPlayersViewController {
     let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! PlayerTableViewCell
     cell.player = ProPlayersService.service.players[indexPath.row]
     return cell
+  }
+}
+
+// MARK: - UITableViewDelegate
+extension ProPlayersTableViewController {
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    performSegue(withIdentifier: segueIdentifier, sender: tableView)
+  }
+}
+
+// MARK: - Prepare for Segue
+extension ProPlayersTableViewController {
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    guard segue.identifier == segueIdentifier, tableView.indexPathForSelectedRow?.row != nil else { return }
+    let vc = segue.destination as! PlayedWithTableViewController
+    let index = tableView.indexPathForSelectedRow!.row
+    vc.accountId = ProPlayersService.service.players[index].accountId
+    vc.navigationItem.title = ProPlayersService.service.players[index].name
   }
 }
 

@@ -43,7 +43,6 @@ class ProPlayersService: NSObject {
         KingfisherManager.shared.cache.clearDiskCache()
         KingfisherManager.shared.cache.clearDiskCache()
         self.players = proPlayers
-        //print(self.players.map {"Name: " + String(describing:$0.avatar) + ", Role: " + (String($0.role!))})
       } catch {
         print(error.localizedDescription)
       }

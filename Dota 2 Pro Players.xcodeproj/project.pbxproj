@@ -10,7 +10,7 @@
 		32D2AEDF2CC698D4A3A4D5E9 /* Pods_Dota_2_Pro_Players.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45010AA26840F1E36AAA11DC /* Pods_Dota_2_Pro_Players.framework */; };
 		517F8E73AC066D125B430A81 /* Pods_Dota_2_Pro_PlayersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9383E22C1B332E3E7DC20BB4 /* Pods_Dota_2_Pro_PlayersUITests.framework */; };
 		8C9AEAF0215E17B000C6B7BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AEAEF215E17B000C6B7BF /* AppDelegate.swift */; };
-		8C9AEAF2215E17B000C6B7BF /* ProPlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AEAF1215E17B000C6B7BF /* ProPlayersViewController.swift */; };
+		8C9AEAF2215E17B000C6B7BF /* ProPlayersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AEAF1215E17B000C6B7BF /* ProPlayersTableViewController.swift */; };
 		8C9AEAF5215E17B000C6B7BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C9AEAF3215E17B000C6B7BF /* Main.storyboard */; };
 		8C9AEAFA215E17B100C6B7BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C9AEAF8215E17B100C6B7BF /* LaunchScreen.storyboard */; };
 		8C9AEB05215E17B200C6B7BF /* Dota_2_Pro_PlayersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AEB04215E17B200C6B7BF /* Dota_2_Pro_PlayersTests.swift */; };
@@ -20,7 +20,11 @@
 		8C9AEB26215E355E00C6B7BF /* ActivityIndicatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AEB25215E355E00C6B7BF /* ActivityIndicatorCell.swift */; };
 		8C9AEB2B215E699E00C6B7BF /* ProPlayersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AEB2A215E699E00C6B7BF /* ProPlayersService.swift */; };
 		8C9AEB2D215E6A9500C6B7BF /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AEB2C215E6A9500C6B7BF /* BaseURL.swift */; };
-		8CA1A2552162549700B9CAD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CA1A2542162545500B9CAD3 /* Assets.xcassets */; };
+		8CA1A2572162B56300B9CAD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CA1A2562162B56300B9CAD3 /* Assets.xcassets */; };
+		8CA1A2592163727F00B9CAD3 /* PlayedWithService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1A2582163727F00B9CAD3 /* PlayedWithService.swift */; };
+		8CA1A25B2163736300B9CAD3 /* Participant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1A25A2163736300B9CAD3 /* Participant.swift */; };
+		8CA1A25F2163788F00B9CAD3 /* PlayedWithTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1A25E2163788F00B9CAD3 /* PlayedWithTableViewController.swift */; };
+		8CA1A26121637C7600B9CAD3 /* PlayedWithTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1A26021637C7600B9CAD3 /* PlayedWithTableViewCell.swift */; };
 		ED90FDDAE2D36F03869C33AA /* Pods_Dota_2_Pro_PlayersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA439D33FBFE3A34CBA247F /* Pods_Dota_2_Pro_PlayersTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +53,7 @@
 		6557B2B3413CF329676454A8 /* Pods-Dota 2 Pro PlayersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dota 2 Pro PlayersUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dota 2 Pro PlayersUITests/Pods-Dota 2 Pro PlayersUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8C9AEAEC215E17B000C6B7BF /* Dota 2 Pro Players.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dota 2 Pro Players.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C9AEAEF215E17B000C6B7BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C9AEAF1215E17B000C6B7BF /* ProPlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProPlayersViewController.swift; sourceTree = "<group>"; };
+		8C9AEAF1215E17B000C6B7BF /* ProPlayersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProPlayersTableViewController.swift; sourceTree = "<group>"; };
 		8C9AEAF4215E17B000C6B7BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C9AEAF9215E17B100C6B7BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C9AEAFB215E17B100C6B7BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,7 +68,11 @@
 		8C9AEB25215E355E00C6B7BF /* ActivityIndicatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorCell.swift; sourceTree = "<group>"; };
 		8C9AEB2A215E699E00C6B7BF /* ProPlayersService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProPlayersService.swift; sourceTree = "<group>"; };
 		8C9AEB2C215E6A9500C6B7BF /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
-		8CA1A2542162545500B9CAD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "/Users/jora/Desktop/Dota 2 Pro Players/Dota 2 Pro Players/Other/Assets.xcassets"; sourceTree = "<absolute>"; };
+		8CA1A2562162B56300B9CAD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CA1A2582163727F00B9CAD3 /* PlayedWithService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayedWithService.swift; sourceTree = "<group>"; };
+		8CA1A25A2163736300B9CAD3 /* Participant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant.swift; sourceTree = "<group>"; };
+		8CA1A25E2163788F00B9CAD3 /* PlayedWithTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayedWithTableViewController.swift; sourceTree = "<group>"; };
+		8CA1A26021637C7600B9CAD3 /* PlayedWithTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayedWithTableViewCell.swift; sourceTree = "<group>"; };
 		9383E22C1B332E3E7DC20BB4 /* Pods_Dota_2_Pro_PlayersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dota_2_Pro_PlayersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA439D33FBFE3A34CBA247F /* Pods_Dota_2_Pro_PlayersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dota_2_Pro_PlayersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D33458344BD443D48038D782 /* Pods-Dota 2 Pro PlayersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dota 2 Pro PlayersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dota 2 Pro PlayersTests/Pods-Dota 2 Pro PlayersTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				8C9AEB1D215E18C900C6B7BF /* PlayerTableViewCell.swift */,
+				8CA1A26021637C7600B9CAD3 /* PlayedWithTableViewCell.swift */,
 				8C9AEB25215E355E00C6B7BF /* ActivityIndicatorCell.swift */,
 			);
 			path = View;
@@ -188,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				8C9AEB20215E192A00C6B7BF /* Player.swift */,
+				8CA1A25A2163736300B9CAD3 /* Participant.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,7 +205,8 @@
 		8C9AEB23215E196900C6B7BF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8C9AEAF1215E17B000C6B7BF /* ProPlayersViewController.swift */,
+				8C9AEAF1215E17B000C6B7BF /* ProPlayersTableViewController.swift */,
+				8CA1A25E2163788F00B9CAD3 /* PlayedWithTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -203,7 +214,7 @@
 		8C9AEB24215E198600C6B7BF /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				8CA1A2542162545500B9CAD3 /* Assets.xcassets */,
+				8CA1A2562162B56300B9CAD3 /* Assets.xcassets */,
 				8C9AEAF8215E17B100C6B7BF /* LaunchScreen.storyboard */,
 				8C9AEAEF215E17B000C6B7BF /* AppDelegate.swift */,
 				8C9AEAFB215E17B100C6B7BF /* Info.plist */,
@@ -216,6 +227,7 @@
 			children = (
 				8C9AEB2C215E6A9500C6B7BF /* BaseURL.swift */,
 				8C9AEB2A215E699E00C6B7BF /* ProPlayersService.swift */,
+				8CA1A2582163727F00B9CAD3 /* PlayedWithService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -329,7 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C9AEAFA215E17B100C6B7BF /* LaunchScreen.storyboard in Resources */,
-				8CA1A2552162549700B9CAD3 /* Assets.xcassets in Resources */,
+				8CA1A2572162B56300B9CAD3 /* Assets.xcassets in Resources */,
 				8C9AEAF5215E17B000C6B7BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,12 +458,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CA1A25F2163788F00B9CAD3 /* PlayedWithTableViewController.swift in Sources */,
 				8C9AEB21215E192A00C6B7BF /* Player.swift in Sources */,
 				8C9AEB1E215E18C900C6B7BF /* PlayerTableViewCell.swift in Sources */,
+				8CA1A25B2163736300B9CAD3 /* Participant.swift in Sources */,
 				8C9AEB2D215E6A9500C6B7BF /* BaseURL.swift in Sources */,
-				8C9AEAF2215E17B000C6B7BF /* ProPlayersViewController.swift in Sources */,
+				8C9AEAF2215E17B000C6B7BF /* ProPlayersTableViewController.swift in Sources */,
+				8CA1A26121637C7600B9CAD3 /* PlayedWithTableViewCell.swift in Sources */,
 				8C9AEB26215E355E00C6B7BF /* ActivityIndicatorCell.swift in Sources */,
 				8C9AEB2B215E699E00C6B7BF /* ProPlayersService.swift in Sources */,
+				8CA1A2592163727F00B9CAD3 /* PlayedWithService.swift in Sources */,
 				8C9AEAF0215E17B000C6B7BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

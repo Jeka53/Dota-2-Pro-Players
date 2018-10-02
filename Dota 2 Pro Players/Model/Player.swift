@@ -9,6 +9,13 @@
 import UIKit
 
 class Player: NSObject, Decodable {
+
+  var accountId: Int
+  var avatar: URL?
+  var name: String?
+  var countryCode: String?
+  var team: String?
+  var role: Int?
   
   let roles: [Int: String] = [
     0: "Safe Lane",
@@ -17,13 +24,8 @@ class Player: NSObject, Decodable {
     3: "Jungle"
   ]
   
-  var avatar: URL?
-  var name: String?
-  var countryCode: String?
-  var team: String?
-  var role: Int?
-  
   enum CodingKeys: String, CodingKey {
+    case accountId = "account_id"
     case avatar = "avatarfull"
     case name
     case countryCode = "loccountrycode"
@@ -31,7 +33,8 @@ class Player: NSObject, Decodable {
     case role = "fantasy_role"
   }
   
-  init(avatar: URL, name: String, countryCode: String, team: String, role: Int) {
+  init(accountId: Int, avatar: URL, name: String, countryCode: String, team: String, role: Int) {
+    self.accountId = accountId
     self.avatar = avatar
     self.name = name
     self.countryCode = countryCode

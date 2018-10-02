@@ -19,7 +19,6 @@ class PlayerTableViewCell: UITableViewCell {
   
   override func awakeFromNib() {
     super.awakeFromNib()
-    // Initialization code
     
     avatarImageView.layer.cornerRadius = 8
     avatarImageView.clipsToBounds = true
@@ -52,5 +51,4 @@ class PlayerTableViewCell: UITableViewCell {
     
     // Configure the view for the selected state
   }
-
 }
