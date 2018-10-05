@@ -1,0 +1,6 @@
+framework module Pods_Dota_2_Pro_PlayersTests {
+  umbrella header "Pods-Dota 2 Pro PlayersTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

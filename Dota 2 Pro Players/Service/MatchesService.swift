@@ -22,6 +22,8 @@ class MatchesService: NSObject {
   
   private(set) var isForceRefresh = false
   
+  private var urlSession: URLSession?
+  
   private var heroes: [Hero] = [] {
     didSet {
       var heroesCopy: [Int: String] = [:]
@@ -36,11 +38,11 @@ class MatchesService: NSObject {
   
   // MARK: - Fetch matches data
   private func fetchData(accountId: Int, offset: Int, limit: Int, completion: @escaping (Data) -> ()) {
-    let session = URLSession(configuration: .default)
+    urlSession = URLSession(configuration: .default)
     let limitQueryParameter = "?limit=\(limit)"
     let offsetQueryParameter = "&offset=\(offset)"
     let url = URL(string: baseURL + matchesPath + String(accountId) + afterParameterPath + limitQueryParameter + offsetQueryParameter)!
-    let task = session.dataTask(with: url) { data, response, error in
+    let task = urlSession?.dataTask(with: url) { data, response, error in
       guard error == nil else {
         NSLog(error.debugDescription, [])
         return
@@ -51,7 +53,7 @@ class MatchesService: NSObject {
         print(error.debugDescription)
       }
     }
-    task.resume()
+    task?.resume()
   }
   
   func fetchMatches(accountId: Int, offset: Int, limit: Int) {
@@ -108,5 +110,11 @@ class MatchesService: NSObject {
   func eraseData() {
     self.matches = []
     self.heroes = []
+  }
+  
+  func cancelSession() {
+    if let session = urlSession {
+      session.invalidateAndCancel()
+    }
   }
 }

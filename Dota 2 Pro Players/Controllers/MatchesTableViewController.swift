@@ -85,6 +85,7 @@ class MatchesTableViewController: UITableViewController {
   
   deinit {
     MatchesService.service.eraseData()
+    MatchesService.service.cancelSession()
   }
   
   
