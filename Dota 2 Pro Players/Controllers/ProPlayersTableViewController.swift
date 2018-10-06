@@ -10,6 +10,13 @@ import UIKit
 
 class ProPlayersTableViewController: UITableViewController {
   
+  @IBAction func showInfo(_ sender: UIBarButtonItem) {
+    let alert = UIAlertController(title: "Pro Players Info", message: "This is a list of professional players of Dota 2. Please select one to see player's played hero per match", preferredStyle: .alert)
+    let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+    alert.addAction(action)
+    present(alert, animated: true, completion: nil)
+  }
+  
   let cellIdentifier = "PlayerCell"
   let loadingIdentifier = "ActivityCell"
   let segueIdentifier = "toParticipants"
