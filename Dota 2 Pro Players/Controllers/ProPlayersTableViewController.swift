@@ -31,6 +31,7 @@ class ProPlayersTableViewController: UITableViewController {
     tableView.separatorStyle = .none
     
     refreshControl = UIRefreshControl()
+    refreshControl?.tintColor = UIColor.darkGray
     refreshControl?.addTarget(self, action: #selector(fetchProPlayers), for: .valueChanged)
     
     token = ProPlayersService.service.observe(\.players) { _, _ in
